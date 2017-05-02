@@ -2,8 +2,6 @@ describe("removeDups", function() {
   const Node = require("../../lib/ch2/helpers/Node");
   const deleteMiddleNode = require("../../lib/ch2/2.3");
 
-
-
   const lst1 = new Node("A");
   lst1.append(new Node("B"));
   const middleNode = new Node("C");
