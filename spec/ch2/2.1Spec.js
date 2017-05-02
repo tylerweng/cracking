@@ -18,11 +18,11 @@ describe("removeDups", function() {
   sol2.append(new Node("D"));
 
   it("handles trivial cases", function() {
-    expect(removeDups(lst1)).toEqual(sol1);
+    expect(removeDups(lst1).isEqual(sol1)).toBeTruthy();
   });
 
   it("handles more involved cases", function() {
-    expect(removeDups(lst2)).toEqual(sol2);
+    expect(removeDups(lst2).isEqual(sol2)).toBeTruthy();
   });
 
 });
