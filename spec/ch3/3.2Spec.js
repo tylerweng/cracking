@@ -28,4 +28,8 @@ describe("Stack with O(1) push, pop & min", function() {
     expect(Stack.elComparator(popped, sol1)).toBeTruthy();
   });
 
+  it("returns the min el properly", function() {
+    expect(stk1.min()).toEqual(5);
+  });
+
 });
