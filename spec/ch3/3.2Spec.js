@@ -1,9 +1,10 @@
 describe("Stack with O(1) push, pop & min", function() {
   const Stack = require("../../lib/ch3/3.2");
 
-  const stk1 = new Stack("A");
-  const stk2 = new Stack("A");
-  const stk3 = new Stack("C");
+  const stk1 = new Stack();
+  const stk2 = new Stack();
+  const stk3 = new Stack();
+
   const sol1 = {
     el: 8,
     min: 5
