@@ -48,8 +48,7 @@ public class Solution {
         Set<DirectedGraphNode> visited = new HashSet<>();
         q.offer(s);
         while (!q.isEmpty()) {
-            int qLen = q.size();
-            for (int i = 0; i < qLen; i++) {
+            for (int i = 0; i < q.size(); i++) {
                 DirectedGraphNode node = q.poll();
                 visited.add(node);
                 if (node == t) return true;
