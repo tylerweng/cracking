@@ -1,8 +1,12 @@
 class BTreeNode {
-    BTreeNode left = null;
-    BTreeNode right = null;
+    BTreeNode left;
+    BTreeNode right;
     int data;
-    public BTreeNode(int data) { this.data = data; }
+    public BTreeNode(int data) {
+        this.data = data;
+        this.left = left;
+        this.right = right;
+    }
 }
 
 BTreeNode sortedArrToBTree(int[] nums, int start, int end) {
